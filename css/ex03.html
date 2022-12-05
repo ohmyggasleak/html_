@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            img{width:100px;height:100px;}
+            .h02{display:none;}
+            .h01:hover{display:none;}
+            /* 숨김 */
+            .h01:hover + .h02{display:block;}
+
+            nav{background-color:black;}
+            nav ul {list-style:none; display:flex; justify-content:flex-end;}
+            nav ul li{/*background-color: brown;*/ padding: 10px;}
+            /* nav에 ul 스타일 , list-style:점이나네모 flex : 가로배치, justify-content:flex-end : 오른쪽 끝으로배치, 
+            padding:위,오른쪽,아래쪽,왼쪽 으로 띄우기 , padding(두개만줄때에는):(위,아래)or(왼쪽,오른쪽), padding 하나만 값을 줄 때에는 4군데 모두 밀어낸다.*/
+            nav ul li a{text-decoration:none; color:white;}
+            nav ul li a:hover {color:orange; border-bottom:1px solid orange; padding-bottom:3px; transition:all 0.25s}
+            /* solid:실선 dotted:점선 border:윤곽 border-bottom:바닥만 padding-bottom:3px 바닥3px만큼 떨어져서,*/
+            .div01{background-color:aquamarine;height:100px; overflow:hidden;}
+            /* overflow:hidden : 자식이 부모보다 범위가 넘어갈경우 벗어나는 만큼 숨김 */
+            .div02{background-color: brown;width:200px;height:200px;}
+        </style>
+    </head>
+    <body>
+        <div class="div01">
+            hello
+            <div class="div02">
+                css
+            </div>
+        </div>
+        <h1>다음내용</h1>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <li> <a href="#">HOME</a> </li>
+                <li> <a href="#">MEMBER</a> </li>
+                <li> <a href="#">BOARD</a> </li>
+            </ul>
+        </nav>
+
+
+        <div class="h01">
+            <h1>none&block</h1>
+            <img src="resources/resources/images/img.jpg">
+        </div>
+        
+        <div class="h02">
+            <h1>none&block</h1>
+            <img src="resources/resources/images/car01.png">
+        </div>
+    </body>
+</html>

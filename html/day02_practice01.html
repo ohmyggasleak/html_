@@ -1,0 +1,89 @@
+<html>
+    <head>연습문제</head>
+    <body>
+        <hr>
+        <form action="회사소개.html" method="get">
+        <table border ='1' >
+            <tr>
+                <th align="left" colspan="2">
+                    다음 <b style="background-color:brown">내용에 맞게 입력</b>하시오.<br>
+                    <p>전공 분야를 입력하세요.<select name="type" size="1">
+                        <option value="p1">소프트웨어
+                        <option value="p2">정보통신공학
+                        <option value="p3">컴퓨터공학
+                        </select>
+                    
+                </th>
+                
+                <th rowspan="4"><img src="test.jpeg" width="100px" heigh="100px"></th>
+                
+            </tr>
+            <tr align="left">
+                <th>
+                    이름
+                </th>
+                <th>
+                    <input type="text" placeholder="input name"><br>
+                </th>
+            </tr>
+            <tr align="left">
+                <th>
+                    아이디
+                </th>
+                <th>
+                    <input type="text" placeholder="input id">
+                </th>
+            </tr>
+            <tr align="left">
+                <th>
+                    비밀번호
+                </th>
+                <th>
+                    <input type="password" placeholder="password">
+                </th>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>성별조사</legend>
+                        여성<input type="radio" name="s" checked>
+                        남성<input type="radio" name="s">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                <fieldset>
+                    <legend>취미조사</legend>
+                    책읽기<input name="hobby" value="1" type="checkbox">
+                    공부하기<input name="hobby" value="2" type="checkbox">
+                    책 읽으며 공부하기<input name="hobby" value="3" type="checkbox">
+                    컴퓨터<input name="hobby" value="4" type="checkbox">                    
+                </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>하고 싶은 말</legend>
+                        
+                        <textarea cols="40" rows="3"></textarea>
+                        
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="완료">
+                    <input type="reset" value="다시작성">
+                
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
+
+
+

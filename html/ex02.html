@@ -1,0 +1,109 @@
+<!-- 필기내용
+
+placeholder="input id" : ""안에 내용이 반투명
+
+10대<input type="radio" name="a" checked> 
+ - checked 사용 : 체크가 되어 있는 상태로 보여줌
+20대<input type="radio" name="a">
+30대<input type="radio" name="age">
+40대<input type="radio" name="age">
+name = "age"  : name에 대한 이름을 같게해야 선택을 하나만 하게 할 수 있음.
+
+공부<input type="checkbox">
+checkbox => 다중 선택 가능
+
+<form>내용</form> : 
+
+submit : 지정한 곳으로 연결
+- <form action ="ex01.html"> : ex01.html 연결
+- action 사용 x : 자기자신으로 연결
+
+get방식 : 뒤에 붙임(검색어), 보이는 방식  ->작은
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=오늘의날씨
+오늘의날씨를 검색한 url
+
+post 방식을 사용할 경우
+주소창에 쓸 수 있는 데이터가 한정적이기 떄문에 get 방식말고 post 방식을 사용함
+- 로그인, 개인정보, 보이고 싶지않은 정보 (get방식 이용x) 
+- 많은 데이터양
+
+form 에 method는 기본적으로 get방식임
+<form action="ex01.html" method= "get" or "post">
+    -action은 submit시에 "ex01.html" 이동
+
+* ex01.html?n=111&a=222
+name="n" : n이라는 변수에 저장해서 넘겨줌
+name="a" : a이라는 변수에 저장해서 넘겨줌
+
+value="a1" : a1값을 넘겨줌
+
+<select name="test" size="2"> -> size는 2개를 표시
+    <option value ="p1"사과> -> 사과대신 p1을 보여줌
+
+<fieldset> 박스하나만 만들어줌
+    <legend> : 박스이름
+
+<div>:블록방식
+<span>:inline방식
+
+<textarea cols="40" rows="3"></textarea> : 말풍선 만들어줌
+
+
+ -->
+
+<html>
+    <head></head>
+
+<body>
+    <div style ="background-color:ghostwhite">
+        div
+        <label style="background-color:blue">label</label>
+    </div>
+    <div style ="background-color:aqua">div</div>
+    <div style ="background-color:brown">div</div>
+
+    <span style="background-color: beige">span</span>
+    <span style="background-color: bisque">span</span>
+    <label style="background-color:blue">label</label>
+    <hr>
+<form action="ex01.html" method = "get">
+    <fieldset>
+        <legend>취미조사</legend>
+        공부<input value="a1" name="hobby" type="checkbox">
+        멍<input value="a2" name="hobby" type="checkbox">
+        게임<input value="a3" name="hobby" type="checkbox">
+    </fieldset>
+    <hr>
+    <select name="test" size="1">
+        <option value="p1">사과
+        <option value="p2">배
+        <option value="p3">귤
+    </select>
+    <hr>
+    <input type = "text" name="n" placeholder = "input name"><br>
+    <input type = "text" name="a" placeholder = "input address"><br>
+    <input type = "reset" value = "초기화">
+    <input type = "submit" value = "서브밋">
+    <input type = "button" value = "버튼">
+</form>
+    <hr>
+    공부<input type="checkbox" checked>
+    멍<input type="checkbox">
+    게임<input type="checkbox">
+    <hr>
+    10대<input type="radio" name="a" checked>
+    20대<input type="radio" name="a">
+    30대<input type="radio" name="age">
+    40대<input type="radio" name="age">
+    <hr>
+    <input type="button" value="버어튼"><br>
+    <input type="submit" value="서브밋"><br>
+    <input type="reset" value="리셋"><br>
+    <input type="text" placeholder="input id"><br>
+    <input type="password" value="비번"><br>
+    <input type="email" value="이메일"><br>
+    <input type="radio" ><br>
+    <input type="checkbox" ><br>
+</body>
+
+</html>
